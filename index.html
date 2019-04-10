@@ -9,9 +9,14 @@
 </head>
 <body>
     <template id="tooltip-template">
-        <span> (?)</span>
+        <slot>Some default text</slot><span> (?)</span>
     </template>
-    <p><inv-tooltip text="Web Components is a set of standards.">Web Components</inv-tooltip> are awesome!</p>
+    <p>
+        <inv-tooltip text="Web Components is a set of standards.">Web Components</inv-tooltip> are awesome!
+    </p>
+    <p>
+        <inv-tooltip></inv-tooltip>
+    </p>
     <p>
         This lecture explained HTML Templates.
     </p>
